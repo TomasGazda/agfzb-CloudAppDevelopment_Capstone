@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: tg-dealership
     routes:
-      - route: $HOST.$DOMAIN
+      - route: tg_capstone.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: tg-dealership-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: tg_capstone.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
